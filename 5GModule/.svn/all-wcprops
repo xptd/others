@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnpl/RobotModule/!svn/ver/61538/Dev/Sys/SysWorkSpace/Trunk/sys_workspace/src/agv_usystem/common/5GModule
+END
+serrw_G.py
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnpl/RobotModule/!svn/ver/61538/Dev/Sys/SysWorkSpace/Trunk/sys_workspace/src/agv_usystem/common/5GModule/serrw_G.py
+END
+hosts
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnpl/RobotModule/!svn/ver/61093/Dev/Sys/SysWorkSpace/Trunk/sys_workspace/src/agv_usystem/common/5GModule/hosts
+END
+5GCheck.sh
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnpl/RobotModule/!svn/ver/61093/Dev/Sys/SysWorkSpace/Trunk/sys_workspace/src/agv_usystem/common/5GModule/5GCheck.sh
+END
+networking.service
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svnpl/RobotModule/!svn/ver/61093/Dev/Sys/SysWorkSpace/Trunk/sys_workspace/src/agv_usystem/common/5GModule/networking.service
+END
+5GCP.sh
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnpl/RobotModule/!svn/ver/61093/Dev/Sys/SysWorkSpace/Trunk/sys_workspace/src/agv_usystem/common/5GModule/5GCP.sh
+END
+5Gudev.sh
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnpl/RobotModule/!svn/ver/60755/Dev/Sys/SysWorkSpace/Trunk/sys_workspace/src/agv_usystem/common/5GModule/5Gudev.sh
+END
+serrw.py
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnpl/RobotModule/!svn/ver/61538/Dev/Sys/SysWorkSpace/Trunk/sys_workspace/src/agv_usystem/common/5GModule/serrw.py
+END
+5GNet.sh
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnpl/RobotModule/!svn/ver/61538/Dev/Sys/SysWorkSpace/Trunk/sys_workspace/src/agv_usystem/common/5GModule/5GNet.sh
+END
+resolv.conf
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svnpl/RobotModule/!svn/ver/61093/Dev/Sys/SysWorkSpace/Trunk/sys_workspace/src/agv_usystem/common/5GModule/resolv.conf
+END

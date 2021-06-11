@@ -1,0 +1,733 @@
+<html><head>
+<title>USBlyzer Report</title>
+<style type="text/css">
+body {padding:0px 0px 0px 0px;background:#fff;color:#000;font-family:Arial,Verdana,Helvetica,sans-serif;font-size:8pt;}
+th {padding-top:0px;padding-right:3px;padding-bottom:0px;padding-left:3px;background:#c9c9c9;color:#fff;text-align:left;font-size:8pt;font-weight:normal;vertical-align:bottom;border:#fff 1px solid;}
+td {padding-top:0px;padding-right:3px;padding-bottom:0px;padding-left:3px;background:#fff;vertical-align:top;font-size:8pt;}
+th.ud {padding-top:0px;padding-right:3px;padding-bottom:0px;padding-left:3px;background:#c9c9c9;color:#fff;text-align:left;font-size:8pt;font-weight:normal;vertical-align:bottom;border:#fff 1px solid;}
+td.ud {padding-top:0px;padding-right:3px;padding-bottom:0px;padding-left:3px;background:#fff;vertical-align:top;font-size:8pt;}
+td.udofs {padding-top:0px;padding-right:8px;padding-bottom:0px;padding-left:3px;font-family:"Courier New",Courier,mono;background:#fff;vertical-align:top;font-size:8pt;text-align:right;}
+td.udsiz {padding-top:0px;padding-right:8px;padding-bottom:0px;padding-left:3px;font-family:"Courier New",Courier,mono;background:#fff;vertical-align:top;font-size:8pt;text-align:right;}
+td.udval {padding-top:0px;padding-right:3px;padding-bottom:0px;padding-left:3px;font-family:"Courier New",Courier,mono;background:#fff;vertical-align:top;font-size:8pt;text-align:right;}
+td.udfld {padding-top:0px;padding-right:3px;padding-bottom:0px;padding-left:3px;background:#fff;vertical-align:top;font-size:8pt;}
+td.udbmfld {padding-top:0px;padding-right:3px;padding-bottom:0px;padding-left:20px;background:#fff;vertical-align:top;font-size:8pt;white-space:nowrap;}
+td.udhex {padding-top:0px;padding-right:3px;padding-bottom:0px;padding-left:3px;font-family:"Courier New",Courier,mono;background:#fff;vertical-align:top;font-size:8pt;text-align:left;white-space:nowrap;}
+td.uddes {padding-top:0px;padding-right:3px;padding-bottom:0px;padding-left:3px;background:#fff;vertical-align:top;font-size:8pt;}
+div.uddiv1 {font-size:8pt;font-style:normal;text-decoration:none;margin-top:12px;margin-right:0px;margin-bottom:4px;margin-left:1px;text-align:left;}
+div.uddiv2 {font-size:8pt;font-style:normal;text-decoration:none;margin-top:4px;margin-right:0px;margin-bottom:4px;margin-left:12px;text-align:left;}
+div.uddiv3 {font-size:8pt;font-style:normal;text-decoration:none;margin-top:2px;margin-right:0px;margin-bottom:2px;margin-left:0px;text-align:left;}
+div.uddiv4 {font-size:8pt;font-style:normal;text-decoration:none;margin-top:2px;margin-right:0px;margin-bottom:2px;margin-left:20px;text-align:left;}
+div.uddiv5 {font-size:8pt;font-style:normal;text-decoration:none;margin-top:6px;margin-right:0px;margin-bottom:6px;margin-left:20px;text-align:left;}
+div.uddiv6 {font-size:8pt;font-style:normal;font-weight:bold;text-decoration:none;margin-top:12px;margin-right:0;margin-bottom:4px;margin-left:0;text-align:left;}
+div.uddiv7 {font-size:8pt;font-style:normal;font-weight:normal;text-decoration:none;margin-top:2px;margin-right:0;margin-bottom:4px;margin-left:0;text-align:left;}
+a {color:#000;text-decoration:none;white-space:nowrap;}
+a:link {color:#000;text-decoration:none;white-space:nowrap;}
+a:hover {color:#000;text-decoration:none;white-space:nowrap;}
+a:visited {color:#000;text-decoration:none;white-space:nowrap;}
+a:active {color:#000;text-decoration:none;white-space:nowrap;}
+a.totop {color:#ccc;font-family:"Courier New",Courier,mono;text-decoration:none;white-space:nowrap;margin-left:8px;}
+.error {color:#f00;}
+</style>
+</head>
+<body><a name="top"></a>
+<p align="left" style="padding-top:3px;padding-right:3px;padding-bottom:0px;padding-left:3px;font-family:Arial,Verdana,Helvetica,sans-serif;font-size:9pt;font-weight:bold;">&#x0055;&#x0053;&#x0042;&#x0020;&#x5927;&#x5BB9;&#x91CF;&#x5B58;&#x50A8;&#x8BBE;&#x5907;</p>
+<table cellspacing="0">
+<tr vAlign="top"><td><b>Connection Status<b></td><td>Device connected</td></tr>
+<tr vAlign="top"><td><b>Current Configuration<b></td><td>1</td></tr>
+<tr vAlign="top"><td><b>Speed<b></td><td>Super (5 Gbit/s)</td></tr>
+<tr vAlign="top"><td><b>Device Address<b></td><td>4</td></tr>
+<tr vAlign="top"><td><b>Number Of Open Pipes<b></td><td>2</td></tr>
+</table>
+<div class="uddiv1"><a name="n80d29d1000000000"><b>Device Descriptor</b> Cruzer Glide 3.0</a></div>
+<table cellspacing="0">
+<tr valign="top"><th class="ud">Offset</th><th class="ud">Field</th><th class="ud">Size</th><th class="ud">Value</th><th class="ud">Description</th></tr>
+<tr valign="top">
+<td class="udofs">0</td>
+<td class="udfld"><nobr>bLength</nobr></td>
+<td class="udsiz">1</td>
+<td class="udval">12h</td>
+<td class="ud"></td>
+</tr>
+<tr valign="top">
+<td class="udofs">1</td>
+<td class="udfld"><nobr>bDescriptorType</nobr></td>
+<td class="udsiz">1</td>
+<td class="udval">01h</td>
+<td class="uddes">Device</td>
+</tr>
+<tr valign="top">
+<td class="udofs">2</td>
+<td class="udfld"><nobr>bcdUSB</nobr></td>
+<td class="udsiz">2</td>
+<td class="udval">0300h</td>
+<td class="uddes">USB Spec 3.0</td>
+</tr>
+<tr valign="top">
+<td class="udofs">4</td>
+<td class="udfld"><nobr>bDeviceClass</nobr></td>
+<td class="udsiz">1</td>
+<td class="udval">00h</td>
+<td class="uddes">Class info in Ifc Descriptors</td>
+</tr>
+<tr valign="top">
+<td class="udofs">5</td>
+<td class="udfld"><nobr>bDeviceSubClass</nobr></td>
+<td class="udsiz">1</td>
+<td class="udval">00h</td>
+<td class="ud"></td>
+</tr>
+<tr valign="top">
+<td class="udofs">6</td>
+<td class="udfld"><nobr>bDeviceProtocol</nobr></td>
+<td class="udsiz">1</td>
+<td class="udval">00h</td>
+<td class="ud"></td>
+</tr>
+<tr valign="top">
+<td class="udofs">7</td>
+<td class="udfld"><nobr>bMaxPacketSize0</nobr></td>
+<td class="udsiz">1</td>
+<td class="udval">09h</td>
+<td class="uddes">512 bytes</td>
+</tr>
+<tr valign="top">
+<td class="udofs">8</td>
+<td class="udfld"><nobr>idVendor</nobr></td>
+<td class="udsiz">2</td>
+<td class="udval">0781h</td>
+<td class="uddes">SanDisk Corp.</td>
+</tr>
+<tr valign="top">
+<td class="udofs">10</td>
+<td class="udfld"><nobr>idProduct</nobr></td>
+<td class="udsiz">2</td>
+<td class="udval">5597h</td>
+<td class="ud"></td>
+</tr>
+<tr valign="top">
+<td class="udofs">12</td>
+<td class="udfld"><nobr>bcdDevice</nobr></td>
+<td class="udsiz">2</td>
+<td class="udval">0100h</td>
+<td class="uddes">1.00</td>
+</tr>
+<tr valign="top">
+<td class="udofs">14</td>
+<td class="udfld"><nobr>iManufacturer</nobr></td>
+<td class="udsiz">1</td>
+<td class="udval">01h</td>
+<td class="uddes">"SanDisk"</td>
+</tr>
+<tr valign="top">
+<td class="udofs">15</td>
+<td class="udfld"><nobr>iProduct</nobr></td>
+<td class="udsiz">1</td>
+<td class="udval">02h</td>
+<td class="uddes">"Cruzer Glide 3.0"</td>
+</tr>
+<tr valign="top">
+<td class="udofs">16</td>
+<td class="udfld"><nobr>iSerialNumber</nobr></td>
+<td class="udsiz">1</td>
+<td class="udval">03h</td>
+<td class="uddes">"4C530001220118121400"</td>
+</tr>
+<tr valign="top">
+<td class="udofs">17</td>
+<td class="udfld"><nobr>bNumConfigurations</nobr></td>
+<td class="udsiz">1</td>
+<td class="udval">01h</td>
+<td class="ud"></td>
+</tr>
+</table>
+<div class="uddiv1"><a name="nccf99d1000000000"><b>Binary Device Object Store (BOS)  Descriptor</b> </a></div>
+<table cellspacing="0">
+<tr valign="top"><th class="ud">Offset</th><th class="ud">Field</th><th class="ud">Size</th><th class="ud">Value</th><th class="ud">Description</th></tr>
+<tr valign="top">
+<td class="udofs">0</td>
+<td class="udfld"><nobr>bLength</nobr></td>
+<td class="udsiz">1</td>
+<td class="udval">05h</td>
+<td class="ud"></td>
+</tr>
+<tr valign="top">
+<td class="udofs">1</td>
+<td class="udfld"><nobr>bDescriptorType</nobr></td>
+<td class="udsiz">1</td>
+<td class="udval">0Fh</td>
+<td class="uddes">Binary Device Object Store (BOS) </td>
+</tr>
+<tr valign="top">
+<td class="udofs">2</td>
+<td class="udfld"><nobr>wTotalLength</nobr></td>
+<td class="udsiz">2</td>
+<td class="udval">0016h</td>
+<td class="ud"></td>
+</tr>
+<tr valign="top">
+<td class="udofs">4</td>
+<td class="udfld"><nobr>bNumDeviceCaps</nobr></td>
+<td class="udsiz">1</td>
+<td class="udval">02h</td>
+<td class="ud"></td>
+</tr>
+</table>
+<div class="uddiv2">
+<div class="uddiv1"><a name="n1df99d1000000000"><b>Device Capability Descriptor - USB 2.0 Extension</b> </a></div>
+<table cellspacing="0">
+<tr valign="top"><th class="ud">Offset</th><th class="ud">Field</th><th class="ud">Size</th><th class="ud">Value</th><th class="ud">Description</th></tr>
+<tr valign="top">
+<td class="udofs">0</td>
+<td class="udfld"><nobr>bLength</nobr></td>
+<td class="udsiz">1</td>
+<td class="udval">07h</td>
+<td class="ud"></td>
+</tr>
+<tr valign="top">
+<td class="udofs">1</td>
+<td class="udfld"><nobr>bDescriptorType</nobr></td>
+<td class="udsiz">1</td>
+<td class="udval">10h</td>
+<td class="uddes">Device Capability</td>
+</tr>
+<tr valign="top">
+<td class="udofs">2</td>
+<td class="udfld"><nobr>bDevCapabilityType</nobr></td>
+<td class="udsiz">1</td>
+<td class="udval">02h</td>
+<td class="uddes">USB 2.0 Extension</td>
+</tr>
+<tr valign="top">
+<td class="udofs">3</td>
+<td class="udfld"><nobr>bmAttributes</nobr></td>
+<td class="udsiz">4</td>
+<td class="udval">00000002h</td>
+<td class="ud"></td>
+</tr>
+<tr valign="top">
+<td class="ud"></td>
+<td class="udbmfld"><nobr>0: Reserved</nobr></td>
+<td class="ud"></td>
+<td class="udval"><nobr>........ ........ ........ .......0&nbsp;</nobr></td>
+<td class="ud"></td>
+</tr>
+<tr valign="top">
+<td class="ud"></td>
+<td class="udbmfld"><nobr>1: Link Power Management</nobr></td>
+<td class="ud"></td>
+<td class="udval"><nobr>........ ........ ........ ......1.&nbsp;</nobr></td>
+<td class="uddes">Yes</td>
+</tr>
+<tr valign="top">
+<td class="ud"></td>
+<td class="udbmfld"><nobr>31..2: Reserved</nobr></td>
+<td class="ud"></td>
+<td class="udval"><nobr>00000000 00000000 00000000 000000..&nbsp;</nobr></td>
+<td class="ud"></td>
+</tr>
+</table>
+<div class="uddiv1"><a name="n8df99d1000000000"><b>Device Capability Descriptor - SuperSpeed USB</b> </a></div>
+<table cellspacing="0">
+<tr valign="top"><th class="ud">Offset</th><th class="ud">Field</th><th class="ud">Size</th><th class="ud">Value</th><th class="ud">Description</th></tr>
+<tr valign="top">
+<td class="udofs">0</td>
+<td class="udfld"><nobr>bLength</nobr></td>
+<td class="udsiz">1</td>
+<td class="udval">0Ah</td>
+<td class="ud"></td>
+</tr>
+<tr valign="top">
+<td class="udofs">1</td>
+<td class="udfld"><nobr>bDescriptorType</nobr></td>
+<td class="udsiz">1</td>
+<td class="udval">10h</td>
+<td class="uddes">Device Capability</td>
+</tr>
+<tr valign="top">
+<td class="udofs">2</td>
+<td class="udfld"><nobr>bDevCapabilityType</nobr></td>
+<td class="udsiz">1</td>
+<td class="udval">03h</td>
+<td class="uddes">SuperSpeed USB</td>
+</tr>
+<tr valign="top">
+<td class="udofs">3</td>
+<td class="udfld"><nobr>bmAttributes</nobr></td>
+<td class="udsiz">1</td>
+<td class="udval">00h</td>
+<td class="ud"></td>
+</tr>
+<tr valign="top">
+<td class="ud"></td>
+<td class="udbmfld"><nobr>0: Reserved</nobr></td>
+<td class="ud"></td>
+<td class="udval"><nobr>.......0&nbsp;</nobr></td>
+<td class="ud"></td>
+</tr>
+<tr valign="top">
+<td class="ud"></td>
+<td class="udbmfld"><nobr>1: Latency Tolerance Messages</nobr></td>
+<td class="ud"></td>
+<td class="udval"><nobr>......0.&nbsp;</nobr></td>
+<td class="uddes">No</td>
+</tr>
+<tr valign="top">
+<td class="ud"></td>
+<td class="udbmfld"><nobr>7..2: Reserved</nobr></td>
+<td class="ud"></td>
+<td class="udval"><nobr>000000..&nbsp;</nobr></td>
+<td class="ud"></td>
+</tr>
+<tr valign="top">
+<td class="udofs">4</td>
+<td class="udfld"><nobr>wSpeedsSupported</nobr></td>
+<td class="udsiz">2</td>
+<td class="udval">000Eh</td>
+<td class="ud"></td>
+</tr>
+<tr valign="top">
+<td class="ud"></td>
+<td class="udbmfld"><nobr>0: Low-Speed</nobr></td>
+<td class="ud"></td>
+<td class="udval"><nobr>........ .......0&nbsp;</nobr></td>
+<td class="uddes">No</td>
+</tr>
+<tr valign="top">
+<td class="ud"></td>
+<td class="udbmfld"><nobr>1: Full-Speed</nobr></td>
+<td class="ud"></td>
+<td class="udval"><nobr>........ ......1.&nbsp;</nobr></td>
+<td class="uddes">Yes</td>
+</tr>
+<tr valign="top">
+<td class="ud"></td>
+<td class="udbmfld"><nobr>2: High-Speed</nobr></td>
+<td class="ud"></td>
+<td class="udval"><nobr>........ .....1..&nbsp;</nobr></td>
+<td class="uddes">Yes</td>
+</tr>
+<tr valign="top">
+<td class="ud"></td>
+<td class="udbmfld"><nobr>3: Super-Speed</nobr></td>
+<td class="ud"></td>
+<td class="udval"><nobr>........ ....1...&nbsp;</nobr></td>
+<td class="uddes">Yes</td>
+</tr>
+<tr valign="top">
+<td class="ud"></td>
+<td class="udbmfld"><nobr>15..4: Reserved</nobr></td>
+<td class="ud"></td>
+<td class="udval"><nobr>00000000 0000....&nbsp;</nobr></td>
+<td class="ud"></td>
+</tr>
+<tr valign="top">
+<td class="udofs">6</td>
+<td class="udfld"><nobr>bFunctionalitySupport</nobr></td>
+<td class="udsiz">1</td>
+<td class="udval">01h</td>
+<td class="uddes">Full-Speed and above</td>
+</tr>
+<tr valign="top">
+<td class="udofs">7</td>
+<td class="udfld"><nobr>bU1DevExitLat</nobr></td>
+<td class="udsiz">1</td>
+<td class="udval">0Ah</td>
+<td class="uddes">Less than 10 µs</td>
+</tr>
+<tr valign="top">
+<td class="udofs">8</td>
+<td class="udfld"><nobr>wU2DevExitLat</nobr></td>
+<td class="udsiz">2</td>
+<td class="udval">0100h</td>
+<td class="uddes">Less than 256 µs</td>
+</tr>
+</table>
+</div>
+<div class="uddiv1"><a name="nce49442000000000"><b>Configuration Descriptor 1</b> Bus Powered, 896 mA</a></div>
+<table cellspacing="0">
+<tr valign="top"><th class="ud">Offset</th><th class="ud">Field</th><th class="ud">Size</th><th class="ud">Value</th><th class="ud">Description</th></tr>
+<tr valign="top">
+<td class="udofs">0</td>
+<td class="udfld"><nobr>bLength</nobr></td>
+<td class="udsiz">1</td>
+<td class="udval">09h</td>
+<td class="ud"></td>
+</tr>
+<tr valign="top">
+<td class="udofs">1</td>
+<td class="udfld"><nobr>bDescriptorType</nobr></td>
+<td class="udsiz">1</td>
+<td class="udval">02h</td>
+<td class="uddes">Configuration</td>
+</tr>
+<tr valign="top">
+<td class="udofs">2</td>
+<td class="udfld"><nobr>wTotalLength</nobr></td>
+<td class="udsiz">2</td>
+<td class="udval">002Ch</td>
+<td class="ud"></td>
+</tr>
+<tr valign="top">
+<td class="udofs">4</td>
+<td class="udfld"><nobr>bNumInterfaces</nobr></td>
+<td class="udsiz">1</td>
+<td class="udval">01h</td>
+<td class="ud"></td>
+</tr>
+<tr valign="top">
+<td class="udofs">5</td>
+<td class="udfld"><nobr>bConfigurationValue</nobr></td>
+<td class="udsiz">1</td>
+<td class="udval">01h</td>
+<td class="ud"></td>
+</tr>
+<tr valign="top">
+<td class="udofs">6</td>
+<td class="udfld"><nobr>iConfiguration</nobr></td>
+<td class="udsiz">1</td>
+<td class="udval">00h</td>
+<td class="ud"></td>
+</tr>
+<tr valign="top">
+<td class="udofs">7</td>
+<td class="udfld"><nobr>bmAttributes</nobr></td>
+<td class="udsiz">1</td>
+<td class="udval">80h</td>
+<td class="uddes">Bus Powered</td>
+</tr>
+<tr valign="top">
+<td class="ud"></td>
+<td class="udbmfld"><nobr>4..0: Reserved</nobr></td>
+<td class="ud"></td>
+<td class="udval"><nobr>...00000&nbsp;</nobr></td>
+<td class="ud"></td>
+</tr>
+<tr valign="top">
+<td class="ud"></td>
+<td class="udbmfld"><nobr>5: Remote Wakeup</nobr></td>
+<td class="ud"></td>
+<td class="udval"><nobr>..0.....&nbsp;</nobr></td>
+<td class="uddes">No</td>
+</tr>
+<tr valign="top">
+<td class="ud"></td>
+<td class="udbmfld"><nobr>6: Self Powered</nobr></td>
+<td class="ud"></td>
+<td class="udval"><nobr>.0......&nbsp;</nobr></td>
+<td class="uddes">No, Bus Powered</td>
+</tr>
+<tr valign="top">
+<td class="ud"></td>
+<td class="udbmfld"><nobr>7: Reserved (set to one)<br>(bus-powered for 1.0)</nobr></td>
+<td class="ud"></td>
+<td class="udval"><nobr>1.......&nbsp;</nobr></td>
+<td class="ud"></td>
+</tr>
+<tr valign="top">
+<td class="udofs">8</td>
+<td class="udfld"><nobr>bMaxPower</nobr></td>
+<td class="udsiz">1</td>
+<td class="udval">70h</td>
+<td class="uddes">896 mA</td>
+</tr>
+</table>
+<div class="uddiv2">
+<div class="uddiv1"><a name="n5f49442000000000"><b>Interface Descriptor 0/0</b>  Mass Storage, 2 Endpoints</a></div>
+<table cellspacing="0">
+<tr valign="top"><th class="ud">Offset</th><th class="ud">Field</th><th class="ud">Size</th><th class="ud">Value</th><th class="ud">Description</th></tr>
+<tr valign="top">
+<td class="udofs">0</td>
+<td class="udfld"><nobr>bLength</nobr></td>
+<td class="udsiz">1</td>
+<td class="udval">09h</td>
+<td class="ud"></td>
+</tr>
+<tr valign="top">
+<td class="udofs">1</td>
+<td class="udfld"><nobr>bDescriptorType</nobr></td>
+<td class="udsiz">1</td>
+<td class="udval">04h</td>
+<td class="uddes">Interface</td>
+</tr>
+<tr valign="top">
+<td class="udofs">2</td>
+<td class="udfld"><nobr>bInterfaceNumber</nobr></td>
+<td class="udsiz">1</td>
+<td class="udval">00h</td>
+<td class="ud"></td>
+</tr>
+<tr valign="top">
+<td class="udofs">3</td>
+<td class="udfld"><nobr>bAlternateSetting</nobr></td>
+<td class="udsiz">1</td>
+<td class="udval">00h</td>
+<td class="ud"></td>
+</tr>
+<tr valign="top">
+<td class="udofs">4</td>
+<td class="udfld"><nobr>bNumEndpoints</nobr></td>
+<td class="udsiz">1</td>
+<td class="udval">02h</td>
+<td class="ud"></td>
+</tr>
+<tr valign="top">
+<td class="udofs">5</td>
+<td class="udfld"><nobr>bInterfaceClass</nobr></td>
+<td class="udsiz">1</td>
+<td class="udval">08h</td>
+<td class="uddes">Mass Storage</td>
+</tr>
+<tr valign="top">
+<td class="udofs">6</td>
+<td class="udfld"><nobr>bInterfaceSubClass</nobr></td>
+<td class="udsiz">1</td>
+<td class="udval">06h</td>
+<td class="uddes">SCSI Transparent Command Set</td>
+</tr>
+<tr valign="top">
+<td class="udofs">7</td>
+<td class="udfld"><nobr>bInterfaceProtocol</nobr></td>
+<td class="udsiz">1</td>
+<td class="udval">50h</td>
+<td class="uddes">Bulk-Only Transport</td>
+</tr>
+<tr valign="top">
+<td class="udofs">8</td>
+<td class="udfld"><nobr>iInterface</nobr></td>
+<td class="udsiz">1</td>
+<td class="udval">00h</td>
+<td class="ud"></td>
+</tr>
+</table>
+<div class="uddiv2">
+<div class="uddiv1"><a name="nef49442000000000"><b>Endpoint Descriptor 81</b>  1 In, Bulk, 1024 bytes</a></div>
+<table cellspacing="0">
+<tr valign="top"><th class="ud">Offset</th><th class="ud">Field</th><th class="ud">Size</th><th class="ud">Value</th><th class="ud">Description</th></tr>
+<tr valign="top">
+<td class="udofs">0</td>
+<td class="udfld"><nobr>bLength</nobr></td>
+<td class="udsiz">1</td>
+<td class="udval">07h</td>
+<td class="ud"></td>
+</tr>
+<tr valign="top">
+<td class="udofs">1</td>
+<td class="udfld"><nobr>bDescriptorType</nobr></td>
+<td class="udsiz">1</td>
+<td class="udval">05h</td>
+<td class="uddes">Endpoint</td>
+</tr>
+<tr valign="top">
+<td class="udofs">2</td>
+<td class="udfld"><nobr>bEndpointAddress</nobr></td>
+<td class="udsiz">1</td>
+<td class="udval">81h</td>
+<td class="uddes">1 In</td>
+</tr>
+<tr valign="top">
+<td class="udofs">3</td>
+<td class="udfld"><nobr>bmAttributes</nobr></td>
+<td class="udsiz">1</td>
+<td class="udval">02h</td>
+<td class="uddes">Bulk</td>
+</tr>
+<tr valign="top">
+<td class="ud"></td>
+<td class="udbmfld"><nobr>1..0: Transfer Type</nobr></td>
+<td class="ud"></td>
+<td class="udval"><nobr>......10&nbsp;</nobr></td>
+<td class="uddes">Bulk</td>
+</tr>
+<tr valign="top">
+<td class="ud"></td>
+<td class="udbmfld"><nobr>7..6: Reserved</nobr></td>
+<td class="ud"></td>
+<td class="udval"><nobr>00......&nbsp;</nobr></td>
+<td class="ud"></td>
+</tr>
+<tr valign="top">
+<td class="udofs">4</td>
+<td class="udfld"><nobr>wMaxPacketSize</nobr></td>
+<td class="udsiz">2</td>
+<td class="udval">0400h</td>
+<td class="uddes">1024 bytes</td>
+</tr>
+<tr valign="top">
+<td class="udofs">6</td>
+<td class="udfld"><nobr>bInterval</nobr></td>
+<td class="udsiz">1</td>
+<td class="udval">00h</td>
+<td class="ud"></td>
+</tr>
+</table>
+<div class="uddiv1"><a name="n5059442000000000"><b>SuperSpeed Endpoint Companion</b> </a></div>
+<table cellspacing="0">
+<tr valign="top"><th class="ud">Offset</th><th class="ud">Field</th><th class="ud">Size</th><th class="ud">Value</th><th class="ud">Description</th></tr>
+<tr valign="top">
+<td class="udofs">0</td>
+<td class="udfld"><nobr>bLength</nobr></td>
+<td class="udsiz">1</td>
+<td class="udval">06h</td>
+<td class="ud"></td>
+</tr>
+<tr valign="top">
+<td class="udofs">1</td>
+<td class="udfld"><nobr>bDescriptorType</nobr></td>
+<td class="udsiz">1</td>
+<td class="udval">30h</td>
+<td class="uddes">SuperSpeed Endpoint Companion</td>
+</tr>
+<tr valign="top">
+<td class="udofs">2</td>
+<td class="udfld"><nobr>bMaxBurst</nobr></td>
+<td class="udsiz">1</td>
+<td class="udval">01h</td>
+<td class="uddes">Up to 2 packets at a time</td>
+</tr>
+<tr valign="top">
+<td class="udofs">3</td>
+<td class="udfld"><nobr>bmAttributes</nobr></td>
+<td class="udsiz">1</td>
+<td class="udval">00h</td>
+<td class="ud"></td>
+</tr>
+<tr valign="top">
+<td class="ud"></td>
+<td class="udbmfld"><nobr>4..0: MaxStreams</nobr></td>
+<td class="ud"></td>
+<td class="udval"><nobr>...00000&nbsp;</nobr></td>
+<td class="ud"></td>
+</tr>
+<tr valign="top">
+<td class="ud"></td>
+<td class="udbmfld"><nobr>7..5: Reserved</nobr></td>
+<td class="ud"></td>
+<td class="udval"><nobr>000.....&nbsp;</nobr></td>
+<td class="ud"></td>
+</tr>
+<tr valign="top">
+<td class="udofs">4</td>
+<td class="udfld"><nobr>wBytesPerInterval</nobr></td>
+<td class="udsiz">2</td>
+<td class="udval">0000h</td>
+<td class="ud"></td>
+</tr>
+</table>
+<div class="uddiv1"><a name="nb059442000000000"><b>Endpoint Descriptor 02</b>  2 Out, Bulk, 1024 bytes</a></div>
+<table cellspacing="0">
+<tr valign="top"><th class="ud">Offset</th><th class="ud">Field</th><th class="ud">Size</th><th class="ud">Value</th><th class="ud">Description</th></tr>
+<tr valign="top">
+<td class="udofs">0</td>
+<td class="udfld"><nobr>bLength</nobr></td>
+<td class="udsiz">1</td>
+<td class="udval">07h</td>
+<td class="ud"></td>
+</tr>
+<tr valign="top">
+<td class="udofs">1</td>
+<td class="udfld"><nobr>bDescriptorType</nobr></td>
+<td class="udsiz">1</td>
+<td class="udval">05h</td>
+<td class="uddes">Endpoint</td>
+</tr>
+<tr valign="top">
+<td class="udofs">2</td>
+<td class="udfld"><nobr>bEndpointAddress</nobr></td>
+<td class="udsiz">1</td>
+<td class="udval">02h</td>
+<td class="uddes">2 Out</td>
+</tr>
+<tr valign="top">
+<td class="udofs">3</td>
+<td class="udfld"><nobr>bmAttributes</nobr></td>
+<td class="udsiz">1</td>
+<td class="udval">02h</td>
+<td class="uddes">Bulk</td>
+</tr>
+<tr valign="top">
+<td class="ud"></td>
+<td class="udbmfld"><nobr>1..0: Transfer Type</nobr></td>
+<td class="ud"></td>
+<td class="udval"><nobr>......10&nbsp;</nobr></td>
+<td class="uddes">Bulk</td>
+</tr>
+<tr valign="top">
+<td class="ud"></td>
+<td class="udbmfld"><nobr>7..6: Reserved</nobr></td>
+<td class="ud"></td>
+<td class="udval"><nobr>00......&nbsp;</nobr></td>
+<td class="ud"></td>
+</tr>
+<tr valign="top">
+<td class="udofs">4</td>
+<td class="udfld"><nobr>wMaxPacketSize</nobr></td>
+<td class="udsiz">2</td>
+<td class="udval">0400h</td>
+<td class="uddes">1024 bytes</td>
+</tr>
+<tr valign="top">
+<td class="udofs">6</td>
+<td class="udfld"><nobr>bInterval</nobr></td>
+<td class="udsiz">1</td>
+<td class="udval">00h</td>
+<td class="ud"></td>
+</tr>
+</table>
+<div class="uddiv1"><a name="n2159442000000000"><b>SuperSpeed Endpoint Companion</b> </a></div>
+<table cellspacing="0">
+<tr valign="top"><th class="ud">Offset</th><th class="ud">Field</th><th class="ud">Size</th><th class="ud">Value</th><th class="ud">Description</th></tr>
+<tr valign="top">
+<td class="udofs">0</td>
+<td class="udfld"><nobr>bLength</nobr></td>
+<td class="udsiz">1</td>
+<td class="udval">06h</td>
+<td class="ud"></td>
+</tr>
+<tr valign="top">
+<td class="udofs">1</td>
+<td class="udfld"><nobr>bDescriptorType</nobr></td>
+<td class="udsiz">1</td>
+<td class="udval">30h</td>
+<td class="uddes">SuperSpeed Endpoint Companion</td>
+</tr>
+<tr valign="top">
+<td class="udofs">2</td>
+<td class="udfld"><nobr>bMaxBurst</nobr></td>
+<td class="udsiz">1</td>
+<td class="udval">0Fh</td>
+<td class="uddes">Up to 16 packets at a time</td>
+</tr>
+<tr valign="top">
+<td class="udofs">3</td>
+<td class="udfld"><nobr>bmAttributes</nobr></td>
+<td class="udsiz">1</td>
+<td class="udval">00h</td>
+<td class="ud"></td>
+</tr>
+<tr valign="top">
+<td class="ud"></td>
+<td class="udbmfld"><nobr>4..0: MaxStreams</nobr></td>
+<td class="ud"></td>
+<td class="udval"><nobr>...00000&nbsp;</nobr></td>
+<td class="ud"></td>
+</tr>
+<tr valign="top">
+<td class="ud"></td>
+<td class="udbmfld"><nobr>7..5: Reserved</nobr></td>
+<td class="ud"></td>
+<td class="udval"><nobr>000.....&nbsp;</nobr></td>
+<td class="ud"></td>
+</tr>
+<tr valign="top">
+<td class="udofs">4</td>
+<td class="udfld"><nobr>wBytesPerInterval</nobr></td>
+<td class="udsiz">2</td>
+<td class="udval">0000h</td>
+<td class="ud"></td>
+</tr>
+</table>
+</div>
+</div>
+<p align="center" style="padding:0;color:#ccc;font-family:Arial,Verdana,Helvetica,sans-serif;font-size:8pt;">This report was generated by <a style="color:#ccc;text-decoration:none;" href="http://www.usblyzer.com/">USBlyzer</a></p>
+</body>
+</html>

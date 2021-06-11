@@ -1,0 +1,30 @@
+#!/bin/bash
+#########################################################################
+com_dir=/home/dahua/agv_workspace/install/install_sys/share/agv_usystem/common
+#等待5G模组本身启动
+sleep 3
+echo on > /sys/bus/usb/devices/usb1/power/level
+echo on > /sys/bus/usb/devices/usb2/power/level
+sleep 2
+#cdcnum表示读取次数。限制读取15次，15次内读取不到表示读取失败
+cdcnum=0
+deviceid="12d1:1506"
+netd=`lsusb | grep -E "$deviceid" | cut -d " " -f6`
+while [ "$netd" != "$deviceid" ]
+do
+	cdcnum=`expr $cdcnum + 1`
+	if [ "$cdcnum" = "15" ];then
+		echo  `date`" : [e] 5GCheck.sh  5G Module Device is not exists!" >> /var/log/5glog
+		break
+	fi
+	sleep 1
+	netd=`lsusb | grep -E "$deviceid" | cut -d " " -f6`
+done
+############确定是5G设备ID,则设备udev文件拷贝###################################
+if [ "$netd" = "$deviceid" ];then
+	cp  $com_dir/DefaultNetSet/cdc-NetSet.sh   /etc/NetSet.sh -f
+	cp  $com_dir/DefaultNetSet/cdc-75-usb-net.rules   /etc/udev/rules.d/75-usb-net.rules  -f 
+	chmod 755  /etc/NetSet.sh
+	chmod 755  /etc/udev/rules.d/75-usb-net.rules
+fi 
+
